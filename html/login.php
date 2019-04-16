@@ -1,5 +1,5 @@
 <?PHP
-	require_once("./assets/php/membersite_config.php");
+	require_once("/assets/php/membersite_config.php");
 
 if(isset($_POST['submitted']))
 {
@@ -29,7 +29,7 @@ if(isset($_POST['submitted']))
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="./assets/css/signin.css" rel="stylesheet">
+    <link href="/assets/css/signin.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
    	<link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
