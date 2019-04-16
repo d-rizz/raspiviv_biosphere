@@ -17,7 +17,7 @@ if(isset($_POST['submitted']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RasPiViv - Sign in</title>
+    <title>Wyatt St. Greenhouse - Sign in</title>
 
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -29,7 +29,7 @@ if(isset($_POST['submitted']))
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="/css/signin.css" rel="stylesheet">
+    <link href="./assets/css/signin.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
    	<link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
@@ -46,8 +46,8 @@ if(isset($_POST['submitted']))
     <div class="container">
 <div id='fg_membersite'>
 <form class='form-signin' id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
-<fieldset >
-        <h2 class="form-signin-heading"><a href="http://www.raspiviv.com"><img src="http://www.raspiviv.com/images/remote/RasPiViv.com_footer.png"></a></h2>
+<fieldset>
+      
 
 <input type='hidden' name='submitted' id='submitted' value='1'/>
 
