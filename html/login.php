@@ -8,7 +8,7 @@
 
     <title>Wyatt St. Greenhouse - Sign in</title>
 
-<!--    
+
 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -18,7 +18,7 @@
     <!--  load CSS -->
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
---> <!--
+
     <link href="/assets/css/signin.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
    	<link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
@@ -91,6 +91,6 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"/>
-  </body> -->
+  </body> 
 </html>
 
