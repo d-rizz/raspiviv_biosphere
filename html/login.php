@@ -13,7 +13,7 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript"></script>
+	<script type="text/javascript"></script> --!> <!--
 
     <!--  load CSS -->
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
