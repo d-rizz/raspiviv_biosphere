@@ -8,7 +8,7 @@
 
     <title>Wyatt St. Greenhouse - Sign in</title>
 
-    <!--Load the AJAX API-->
+<!--    <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -90,6 +90,6 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"/>
-  </body>
+  </body> --!>
 </html>
 
