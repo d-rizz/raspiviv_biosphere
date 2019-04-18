@@ -29,7 +29,7 @@
 
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['BASE TMP',
+				['Temperature',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -70,9 +70,7 @@
 			chart.draw(data, options);
 		}
 	</script>
-
 	<!-- ROOM HUM GAUGE -->
-
     <script type="text/javascript">
 		google.load("visualization", "1", {packages:["gauge"]});
 		google.setOnLoadCallback(drawChart);
@@ -80,7 +78,7 @@
 
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['BASE HUM',
+				['Humidity',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
