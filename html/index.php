@@ -149,7 +149,7 @@
 				minorTicks: 5
 			};
 
-			var chart = new google.visualization.Gauge(document.getElementById('roomtemp_div'));
+			var chart = new google.visualization.Gauge(document.getElementById('electemp_div'));
 			chart.draw(data, options);
 		}
 	</script>
@@ -197,7 +197,7 @@
 				minorTicks: 5
 			};
 
-			var chart = new google.visualization.Gauge(document.getElementById('roomhum_div'));
+			var chart = new google.visualization.Gauge(document.getElementById('elechum_div'));
 
 			chart.draw(data, options);
 		}
