@@ -16,6 +16,8 @@ function readSensor($sensor)
 	$q = "INSERT INTO datalogger VALUES (now(), $sensor, '$temp', '$humid',0)"; 
 	mysqli_query($db, $q); 
 	mysqli_close($db); 
+	print $humid
+	print $temp
 	return; 
 } 
 
