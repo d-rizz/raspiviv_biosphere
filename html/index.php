@@ -104,7 +104,7 @@
 		}
     </script>
 
-	<!-- ROOM TEMP GAUGE -->
+	<!-- ELECTRICAL TEMP GAUGE -->
 	<script type="text/javascript">
 		google.load("visualization", "1", {packages:["gauge"]});
 		google.setOnLoadCallback(drawChart);
@@ -153,7 +153,7 @@
 			chart.draw(data, options);
 		}
 	</script>
-	<!-- ROOM HUM GAUGE -->
+	<!-- ELECTRICAL HUM GAUGE -->
     <script type="text/javascript">
 		google.load("visualization", "1", {packages:["gauge"]});
 		google.setOnLoadCallback(drawChart);
