@@ -106,7 +106,7 @@
 
 	<!-- ELECTRICAL TEMP GAUGE -->
 	<script type="text/javascript">
-		google.load("visualization", "1", {packages:["gauge"]});
+		google.load("visualization", "2", {packages:["gauge"]});
 		google.setOnLoadCallback(drawChart);
 		function drawChart() {
 
@@ -155,7 +155,7 @@
 	</script>
 	<!-- ELECTRICAL HUM GAUGE -->
     <script type="text/javascript">
-		google.load("visualization", "1", {packages:["gauge"]});
+		google.load("visualization", "2", {packages:["gauge"]});
 		google.setOnLoadCallback(drawChart);
 		function drawChart() {
 
