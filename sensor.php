@@ -21,8 +21,7 @@ function readSensor($sensor)
 	return; 
 } 
 
-readSensor(8); 
-readSensor(9);
+
 
 
 ?> 
