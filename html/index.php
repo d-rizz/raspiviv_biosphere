@@ -318,8 +318,8 @@
 
 			<div class="row">
 				<div class="col-xs-4">
-					<div id="viv1temp_div"></div>
-					<div id="viv1hum_div"></div>
+					<div id="electemp_div"></div>
+					<div id="elechum_div"></div>
 				</div>
 				<div class="col-xs-8"">
 					<div id="graph_tank1_history_div"></div>
