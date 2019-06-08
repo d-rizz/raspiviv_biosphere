@@ -21,6 +21,6 @@ function readSensor($sensor)
 
 readSensor(8); 
 readSensor(9);
-readSensor(7);
+
 
 ?> 
