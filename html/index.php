@@ -226,6 +226,7 @@
 					die("Connection failed: " . mysqli_connect_error());
 				}
 				$q = "select * from $dbname ";
+				$q = $q . "where sensor = 9 ";
 				$q = $q . "order by date_time desc ";
 				$q = $q . "limit 20000";
 				$result = mysqli_query ($db, $q );
