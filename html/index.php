@@ -212,7 +212,7 @@
 	google.setOnLoadCallback(drawChart);
 	function drawChart() {
 		var data = google.visualization.arrayToDataTable([
-		  	['TIME', 'TEMP', 'HUMIDITY', 'SENSOR' ],
+		  	['TIME', 'TEMP', 'HUMIDITY'],
 			<?php
 				$servername = "localhost";
 				$username = "datalogger";
@@ -235,7 +235,6 @@
 						echo "['" . $r->date_time . "', ";
 						echo " " . $r->temperature . " ,";
 						echo " " . $r->humidity . " ],";
-						echo " " . $r->sensor . " ],";
 					}
 				} else {
 					echo "0 results";
