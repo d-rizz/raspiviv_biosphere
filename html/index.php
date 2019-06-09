@@ -212,7 +212,7 @@
 	google.setOnLoadCallback(drawChart);
 	function drawChart() {
 		var data = google.visualization.arrayToDataTable([
-		  	['TIME', 'TEMP', 'HUMIDITY' ],
+		  	['TIME', 'TEMP', 'HUMIDITY', 'SENSOR' ],
 			<?php
 				$servername = "localhost";
 				$username = "datalogger";
@@ -226,9 +226,8 @@
 					die("Connection failed: " . mysqli_connect_error());
 				}
 				$q = "select * from $dbname ";
-				$q = $q . "where sensor = 8 ";
 				$q = $q . "order by date_time desc ";
-				$q = $q . "limit 4320";
+				$q = $q . "limit 20000";
 				$result = mysqli_query ($db, $q );
 
 				if (mysqli_num_rows($result) > 0) {
@@ -236,6 +235,7 @@
 						echo "['" . $r->date_time . "', ";
 						echo " " . $r->temperature . " ,";
 						echo " " . $r->humidity . " ],";
+						echo " " . $r->sensor . " ],";
 					}
 				} else {
 					echo "0 results";
@@ -253,6 +253,8 @@
 			series: {
 				0: {color: 'red', targetAxisIndex: 0},
 				1: {color: 'blue', targetAxisIndex: 1},
+				2: {color: 'green', targetAxisIndex: 0},
+				3: {color: 'black', targetAxisIndex: 1}
 		},
 
 		vAxes: {
