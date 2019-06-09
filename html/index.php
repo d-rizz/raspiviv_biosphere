@@ -253,8 +253,8 @@
 			series: {
 				0: {color: 'red', targetAxisIndex: 0},
 				1: {color: 'blue', targetAxisIndex: 1},
-				2: {color: 'green', targetAxisIndex: 0},
-				3: {color: 'black', targetAxisIndex: 1}
+				2: {color: 'green', targetAxisIndex: 2},
+				3: {color: 'black', targetAxisIndex: 3}
 		},
 
 		vAxes: {
