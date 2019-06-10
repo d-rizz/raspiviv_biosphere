@@ -19,10 +19,14 @@ function readSensor($sensor)
 	print $humid;
 	print $temp;
 	return; 
+	
 } 
 
+readSensor(7);
 readSensor(8);
 readSensor(9);
+
+
 
 
 ?> 
