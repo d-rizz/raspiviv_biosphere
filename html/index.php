@@ -27,7 +27,7 @@
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['Temperature',
+				['Temp - Indoor',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -69,7 +69,7 @@
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['Humidity',
+				['RH - Indoor',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -111,7 +111,7 @@
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['Temperature',
+				['Temp - Outdoor',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -153,7 +153,7 @@
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['Humidity',
+				['RH - Outdoor',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -196,7 +196,7 @@
 
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['Temperature',
+				['Temp - Electrical',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -245,7 +245,7 @@
 
 			var data = google.visualization.arrayToDataTable([
 				['Label', 'Value'],
-				['Humidity',
+				['RH - Electrical',
 					<?php
 						$servername = "localhost";
 						$username = "datalogger";
@@ -363,7 +363,7 @@
 		<div class="jumbotron">
 			<div class="container">
 				<?php include('menu.html');?>
-				<h3>Indoor Conditions</h3>
+				<h3>Current Conditions</h3>
 				<?php include 'time.php';?>
 			</div>
 		</div>
@@ -384,9 +384,7 @@
 					
 				</div>
 
-				<div class="col-xs-8"">
-					 <div id="graph_room_history_div" style="width: auto; height: auto;"></div>
-				</div>
+				
 			</div>
 
 		</div>
@@ -403,8 +401,9 @@
 
 			<div class="row">
 				<div class="col-xs-4">
-					<div id="outdoortemp_div"></div>
+					<div id="outdoorhum_div"></div>
 					<div id="roomhum_div" style="width: auto; height: auto;"></div>
+					<div id="elechum_div"></div>							
 				</div>
 				<!-- <div class="col-xs-8"">
 					<div id="graph_tank1_history_div"></div>
@@ -415,21 +414,8 @@
 		<hr>
 
 		<div class="container">
-			<!-- <a href="/graph01.php" title="VIV 1" alt="VIV 1">
-				<span class="fa-stack fa-2x">
-				  <i class="fa fa-circle fa-stack-2x"></i>
-				  <strong class="fa-stack-1x fa-stack-text fa-inverse">1</strong>
-				</span>
-			</a> -->
-
-			<div class="row">
-				<div class="col-xs-4">
-					
-					<div id="elechum_div"></div>
-				</div>
-				<!-- <div class="col-xs-8"">
-					<div id="graph_tank1_history_div"></div>
-				</div> -->
+			<div class="col-xs-8"">
+					 <div id="graph_room_history_div" style="width: auto; height: auto;"></div>
 			</div>
 		</div>
 
