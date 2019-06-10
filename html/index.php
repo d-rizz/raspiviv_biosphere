@@ -369,22 +369,10 @@
 		</div>
 
 		<div class="container">
-					<a href="/" title="BASE" alt="BASE">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<strong class="fa-stack-1x fa-stack-text fa-inverse">Inside Greenhouse</strong>
-						</span>
-					</a>
-			<div class="row">
-
-				
-					<div id="outdoortemp_div" style="width: auto; height: auto;"></div>
+			<div class="row">	
+					<div id="outdoortemp_div" style="width: 50; height: auto;"></div>
 					<div id="roomtemp_div" style="width: auto; height: auto;"></div>
-					<div id="electemp_div"  style="width: auto; height: auto;"></div>
-					
-				
-
-				
+					<div id="electemp_div"  style="width: auto; height: auto;"></div>					
 			</div>
 
 		</div>
