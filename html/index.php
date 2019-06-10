@@ -369,11 +369,11 @@
 		</div>
 
 		<div class="container">
-			<div class="row">	
-					<div id="outdoortemp_div" style="width: 50; height: auto;"></div>
-					<div id="roomtemp_div" style="width: auto; height: auto;"></div>
-					<div id="electemp_div"  style="width: auto; height: auto;"></div>					
-			</div>
+				
+					<div id="outdoortemp_div" display:inline ></div>
+					<div id="roomtemp_div" display:inline ></div>
+					<div id="electemp_div" display:inline  ></div>					
+			
 
 		</div>
 
