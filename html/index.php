@@ -377,12 +377,12 @@
 					</a>
 			<div class="row">
 
-				<div class="col-xs-4">
+				
 					<div id="outdoortemp_div" style="width: auto; height: auto;"></div>
 					<div id="roomtemp_div" style="width: auto; height: auto;"></div>
 					<div id="electemp_div"  style="width: auto; height: auto;"></div>
 					
-				</div>
+				
 
 				
 			</div>
