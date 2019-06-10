@@ -22,9 +22,9 @@ function readSensor($sensor)
 	
 } 
 
-readSensor(7);
-readSensor(8);
-readSensor(9);
+readSensor(7); /* outdoor sensor */
+readSensor(8); /* electrical box sensor */
+readSensor(9); /* indoor sensor */
 
 
 
