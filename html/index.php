@@ -103,6 +103,90 @@
 			chart.draw(data, options);
 		}
     </script>
+	
+<!-- OUTDOOR TEMP GAUGE -->
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["gauge"]});
+		google.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Label', 'Value'],
+				['Temperature',
+					<?php
+						$servername = "localhost";
+						$username = "datalogger";
+						$password = "datalogger";
+						$dbname = "datalogger";
+						// Create connection
+						$conn = mysqli_connect($servername, $username, $password, $dbname);
+						// Check connection
+						if (!$conn) {
+							die("Connection failed: " . mysqli_connect_error());
+						}
+						$sql = "SELECT temperature FROM datalogger where sensor = 7 ORDER BY date_time DESC LIMIT 1";
+						$result = mysqli_query($conn, $sql);
+						if (mysqli_num_rows($result) > 0) {
+							// output data of each row
+							while($row = mysqli_fetch_assoc($result)) {
+								echo $row["temperature"];
+							}
+						} else {
+							echo "0 results";
+						}
+						mysqli_close($conn);
+					?>
+				],
+			]);
+			var options = {
+				width: 200,
+				height: 200,
+				minorTicks: 5
+			};
+			var chart = new google.visualization.Gauge(document.getElementById('outdoortemp_div'));
+			chart.draw(data, options);
+		}
+	</script>
+	<!-- OUTDOOR HUM GAUGE -->
+    <script type="text/javascript">
+		google.load("visualization", "1", {packages:["gauge"]});
+		google.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Label', 'Value'],
+				['Humidity',
+					<?php
+						$servername = "localhost";
+						$username = "datalogger";
+						$password = "datalogger";
+						$dbname = "datalogger";
+						// Create connection
+						$conn = mysqli_connect($servername, $username, $password, $dbname);
+						// Check connection
+						if (!$conn) {
+							die("Connection failed: " . mysqli_connect_error());
+						}
+						$sql = "SELECT humidity FROM datalogger where sensor = 7 ORDER BY date_time DESC LIMIT 1";
+						$result = mysqli_query($conn, $sql);
+						if (mysqli_num_rows($result) > 0) {
+							// output data of each row
+							while($row = mysqli_fetch_assoc($result)) {
+								echo $row["humidity"];
+							}
+						} else {
+							echo "0 results";
+						}
+						mysqli_close($conn);
+					?>
+				],
+			]);
+			var options = {
+				width: 200, height: 200,
+				minorTicks: 5
+			};
+			var chart = new google.visualization.Gauge(document.getElementById('outdoorhum_div'));
+			chart.draw(data, options);
+		}
+    </script>
 
 	<!-- ELECTRICAL TEMP GAUGE -->
 	<script type="text/javascript">
@@ -279,7 +363,7 @@
 		<div class="jumbotron">
 			<div class="container">
 				<?php include('menu.html');?>
-				<h3>Base Conditions</h3>
+				<h3>Indoor Conditions</h3>
 				<?php include 'time.php';?>
 			</div>
 		</div>
@@ -288,14 +372,16 @@
 					<a href="/" title="BASE" alt="BASE">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
-							<strong class="fa-stack-1x fa-stack-text fa-inverse">B</strong>
+							<strong class="fa-stack-1x fa-stack-text fa-inverse">Inside Greenhouse</strong>
 						</span>
 					</a>
 			<div class="row">
 
 				<div class="col-xs-4">
+					<div id="outdoortemp_div" style="width: auto; height: auto;"></div>
 					<div id="roomtemp_div" style="width: auto; height: auto;"></div>
-					<div id="roomhum_div" style="width: auto; height: auto;"></div>
+					<div id="electemp_div"  style="width: auto; height: auto;"></div>
+					
 				</div>
 
 				<div class="col-xs-8"">
@@ -306,24 +392,44 @@
 		</div>
 
 		<hr>
-
-
+													    
 		<div class="container">
-			<a href="/graph01.php" title="VIV 1" alt="VIV 1">
+			<!-- <a href="/graph01.php" title="VIV 1" alt="VIV 1">
 				<span class="fa-stack fa-2x">
 				  <i class="fa fa-circle fa-stack-2x"></i>
 				  <strong class="fa-stack-1x fa-stack-text fa-inverse">1</strong>
 				</span>
-			</a>
+			</a> -->
 
 			<div class="row">
 				<div class="col-xs-4">
-					<div id="electemp_div"></div>
+					<div id="outdoortemp_div"></div>
+					<div id="roomhum_div" style="width: auto; height: auto;"></div>
+				</div>
+				<!-- <div class="col-xs-8"">
+					<div id="graph_tank1_history_div"></div>
+				</div> -->
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="container">
+			<!-- <a href="/graph01.php" title="VIV 1" alt="VIV 1">
+				<span class="fa-stack fa-2x">
+				  <i class="fa fa-circle fa-stack-2x"></i>
+				  <strong class="fa-stack-1x fa-stack-text fa-inverse">1</strong>
+				</span>
+			</a> -->
+
+			<div class="row">
+				<div class="col-xs-4">
+					
 					<div id="elechum_div"></div>
 				</div>
-				<div class="col-xs-8"">
+				<!-- <div class="col-xs-8"">
 					<div id="graph_tank1_history_div"></div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
