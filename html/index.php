@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
 	<!-- ROOM TEMP GAUGE -->
+	Fuckin' Shit!
 	<script type="text/javascript">
 		google.load("visualization", "1", {packages:["gauge"]});
 		google.setOnLoadCallback(drawChart);
